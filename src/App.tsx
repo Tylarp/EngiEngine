@@ -113,7 +113,7 @@ function App() {
     <div className="app-shell">
       <header className="topbar">
         <div className="nav-inner">
-          <button className="brand" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><span className="brand-mark"><Ruler size={18} /></span><span>MECH<span className="brand-accent">CALC</span></span></button>
+          <button className="brand" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><span className="brand-mark"><Ruler size={18} /></span><span>ENGI<span className="brand-accent">ENGINE</span></span></button>
           <div className={`nav-links ${mobileMenu ? 'open' : ''}`}><a href="#tools">Tools</a><a href="#how-it-works">How it works</a><button className="nav-convert" onClick={() => setConverterOpen(true)}><CircleGauge size={15} /> Unit converter</button></div>
           <div className="nav-actions"><span className="status-chip"><span className="status-dot" /> Engine ready</span><button className="menu-button" onClick={() => setMobileMenu(!mobileMenu)} aria-label="Open menu">{mobileMenu ? <X size={20} /> : <Menu size={20} />}</button></div>
         </div>
@@ -129,7 +129,7 @@ function App() {
         <section className="principles" id="how-it-works"><div className="principles-copy"><div className="section-kicker">BUILT FOR CLARITY</div><h2>From inputs to insight,<br /><span>without the black box.</span></h2><p>Every tool shows its formula, explains the principle, and gives you a visual cue for what is happening. Because understanding the answer is as important as getting it.</p><button className="outline-button" onClick={() => setEngineeringMode(true)}>See the working <ArrowRight size={15} /></button></div><div className="principle-cards"><div className="principle-card"><span className="principle-number">01</span><div className="principle-icon"><Settings2 size={18} /></div><h3>Set your inputs</h3><p>Work in familiar SI units or switch to what your project requires.</p></div><div className="principle-card"><span className="principle-number">02</span><div className="principle-icon"><Calculator size={18} /></div><h3>Run the equation</h3><p>See the relationship between each value and the final result.</p></div><div className="principle-card"><span className="principle-number">03</span><div className="principle-icon"><FlaskConical size={18} /></div><h3>Understand the result</h3><p>Use the visual model to connect the math to the real world.</p></div></div></section>
       </main>
 
-      <footer><div className="footer-brand"><span className="brand-mark"><Ruler size={16} /></span><strong>MECH<span>CALC</span></strong></div><span>Fundamentals, made practical.</span><span>© 2024 MechCalc</span></footer>
+      <footer><div className="footer-brand"><span className="brand-mark"><Ruler size={16} /></span><strong>MECH<span>CALC</span></strong></div><span>Fundamentals, made practical.</span><span>© 2026 EngiEngine</span></footer>
       {converterOpen && <UnitConverter onClose={() => setConverterOpen(false)} />}
     </div>
   );
